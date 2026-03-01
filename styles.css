@@ -1,0 +1,290 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#canvas1 {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background: #111;
+}
+#canvas1 canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Gearshift GUI Styles */
+#gearshift-gui {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+.gearshift-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.gearshift-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    pointer-events: all;
+}
+
+.gearshift-h-pattern {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    background: rgba(30, 30, 30, 0.9);
+    border: 2px solid #555;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.gear-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.top-row {
+    height: 100px;
+}
+
+.middle-row {
+    height: 100px;
+    justify-content: center;
+}
+
+.bottom-row {
+    height: 100px;
+    padding-bottom: 20px;
+}
+
+.gear-position {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #aaa;
+    font-family: Arial, sans-serif;
+    user-select: none;
+    position: relative;
+    z-index: 2;
+    border-radius: 8px;
+    transition: color 0.2s ease;
+}
+
+.gear-position.neutral {
+    width: 80px;
+    height: 80px;
+    font-size: 36px;
+}
+
+.gear-position.active {
+    color: #ff8800;
+}
+
+
+.h-pattern-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.gear-indicator {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #000;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    z-index: 10;
+    pointer-events: none;
+    transition: left 0.1s ease, top 0.1s ease;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    transform: translate(-50%, -50%);
+}
+
+.gearshift-hint {
+    color: #888;
+    font-size: 12px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 8px;
+}
+
+
+/* Controls Help Styles */
+#controls-help {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1500;
+    background: rgba(30, 30, 30, 0.9);
+    border: 2px solid #555;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    font-size: 13px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    pointer-events: none;
+    user-select: none;
+}
+
+.controls-title {
+    font-weight: bold;
+    font-size: 14px;
+    color: #4a9eff;
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #444;
+}
+
+.control-item {
+    margin: 6px 0;
+    color: #ccc;
+    line-height: 1.4;
+}
+
+.key {
+    display: inline-block;
+    background: rgba(74, 158, 255, 0.2);
+    border: 1px solid #4a9eff;
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-weight: bold;
+    color: #4a9eff;
+    font-size: 12px;
+    margin: 0 2px;
+    min-width: 20px;
+    text-align: center;
+}
+
+/* About Button Styles */
+#about-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1600;
+    background: rgba(30, 30, 30, 0.9);
+    border: 2px solid #555;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+#about-button:hover {
+    background: rgba(50, 50, 50, 0.95);
+    border-color: #4a9eff;
+    color: #4a9eff;
+}
+
+/* About Modal Styles */
+#about-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1700;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.about-modal-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.about-modal-content {
+    background: rgba(30, 30, 30, 0.95);
+    border: 2px solid #555;
+    border-radius: 12px;
+    padding: 30px;
+    padding-right: 60px;
+    max-width: 650px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+.about-modal-content h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #4a9eff;
+    font-size: 24px;
+}
+
+.about-content {
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.about-content p {
+    margin: 12px 0;
+}
+
+.about-content ul {
+    margin: 12px 0;
+    padding-left: 30px;
+}
+
+.about-content li {
+    margin: 8px 0;
+}
+
+.about-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: background 0.2s ease, color 0.2s ease;
+    line-height: 1;
+}
+
+.about-modal-close:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #4a9eff;
+}
