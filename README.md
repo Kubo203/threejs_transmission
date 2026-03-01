@@ -18,13 +18,6 @@ Program slúži ako **vzdelávací a interaktívny nástroj**, ktorý zrozumite�
 
 ## Inštalácia a Spustenie
 
-### Rozbalenie Archívu
-
-1. Stiahnite súbor: `Filicko_Kocakova_PG1_2025_2026.zip`
-2. Rozbalte archív do požadovanej zložky:
-   - **Windows**: Kliknite pravým tlačidlom → "Extrahovať všetko"
-   - **macOS/Linux**: `unzip Filicko_Kocakova_PG1_2025_2026.zip`
-
 ### Spustenie Projektu
 
 1. Otvorte projekt vo Webstorm IDE, zvoľte `index.html` súbor a vyberte si webový prehliadač (Chrome, Firefox, Edge, Safari) z ikoniek zobrazených v pravom hornom rohu IDE. 
@@ -116,5 +109,117 @@ Akademický rok: 2025/2026
 **Verzia**: 1.0  
 **Dátum**: 28. December 2025
 
+---
+
+# 3D Gearbox Representation (English)
+
+## About the Project
+
+This program presents a **3D representation of an automotive gearbox** created within the thematic area *Dynamic Motion Simulator in 3D Space* for the **Computer Graphics** course.
+
+### Project Goals
+
+The main goals of the project are:
+- To illustrate the **operation principle of a manual gearbox**
+- To visually demonstrate gear shifting
+- To show torque transmission from the engine through the gearbox to the wheels
+- To allow observation of the entire drivetrain
+
+The program serves as an **educational and interactive tool** that clearly demonstrates how the individual gearbox components work together.
+
+---
+
+## Installation and Running
+
+### Running the Project
+
+1. Open the project in WebStorm IDE, select the `index.html` file and choose a web browser (Chrome, Firefox, Edge, Safari) from the icons displayed in the top right corner of the IDE.
+2. The application should load automatically
+
+---
+
+## Package Contents
+
+```
+Filicko_Kocakova_PG1_2025_2026/
+├── index.html                 # Main HTML file
+├── main.js                    # Main JavaScript code
+├── styles.css                 # Application styles
+├── package.json               # Project configuration
+├── README.md                  # This file
+├── gearbox16.glb              # 3D gearbox model
+├── white.jpg                  # Background texture
+├── road.jpg                   # Road texture
+├── js/                        # JavaScript libraries
+│   └── threejs/               # Three.js library
+├── DOKUMENTACIA/              # Project documentation
+│   ├── USER_GUIDE.pdf         # User guide
+│   └── SYSTEM_GUIDE.pdf       # Technical documentation
+```
+
+---
+
+## Quick User Guide
+
+### Camera Controls
+- **WASD** - Camera movement (forward, backward, left, right)
+- **↑ / ↓** - Camera movement up/down
+- **Mouse + click** - View rotation (OrbitControls)
+- **Shift** - Faster movement
+
+### Gearbox Interaction
+- **G** - Open gear selection
+- **Mouse** - Movement in H-pattern
+- **Release G** - Engage selected gear
+
+### Visualization
+- Watch the rotation of gear wheels
+- Observe the movement of connections when changing gears
+- Notice the movement of the car wheels
+
+---
+
+## Documentation
+
+### For Users
+A detailed user guide including explanation of individual gearbox components can be found in:
+- **`USER_GUIDE.pdf`** - Complete user guide
+
+### For Developers
+To understand the code or make changes to the program, see:
+- **`SYSTEM_GUIDE.pdf`** - Technical documentation, architecture and code description
+
+---
+
+## Technical Requirements
+
+- **Web browser**: Chrome, Firefox, Edge, Safari (recent versions)
+- **JavaScript**: Must be enabled in the browser
+- **Internet connection**: Not required (local run)
+
+---
+
+## Authors
+
+**Jakub Filičko**  
+**Jana Kocáková**
+
+Course: Computer Graphics  
+Department of Informatics and Computers  
+Technical University of Košice  
+Academic year: 2025/2026
+
+---
+
+## Notes
+
+- The application uses the **Three.js** library for 3D graphics
+- The 3D gearbox model is imported from GLTF format (`.glb`)
+- Interactive control is implemented using HTML5 and WebGL
+
+---
+
+**Version**: 1.0  
+**Date**: December 28, 2025
 
 
