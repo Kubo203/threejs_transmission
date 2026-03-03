@@ -2,7 +2,7 @@
 
 ## O Projekte
 <video src="https://github.com/user-attachments/assets/7bb04ed6-23b7-4e34-8436-d8c8f1d51ef7"
-       width="600"
+       width="300"
        controls>
 </video>
 
