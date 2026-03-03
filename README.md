@@ -1,14 +1,11 @@
 # 3D Reprezentácia Prevodovky 
 
 ## O Projekte
-<video src="https://github.com/user-attachments/assets/7bb04ed6-23b7-4e34-8436-d8c8f1d51ef7"
-       width="300"
-       controls>
-</video>
-
-https://github.com/user-attachments/assets/0f40eaf8-c414-4454-baa5-09f24416145b
-
-https://github.com/user-attachments/assets/fdcdc300-a1a9-4484-b00c-595735f9f6e3
+<p align="center">
+  <a href="https://youtu.be/MJTbHB9aRbU">
+    <img src="https://img.youtube.com/vi/MJTbHB9aRbU/maxresdefault.jpg" width="600" alt="YouTube video">
+  </a>
+</p>
 
 
 
