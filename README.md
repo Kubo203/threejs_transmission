@@ -2,11 +2,20 @@
 
 ## O Projekte
 <h2 align="center">Demo video</h2>
-<p align="center">
-  <a href="https://youtu.be/MJTbHB9aRbU">
-    <img src="https://img.youtube.com/vi/MJTbHB9aRbU/maxresdefault.jpg" width="600" alt="YouTube video">
-  </a>
-</p>
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="https://youtu.be/MJTbHB9aRbU">
+        <img src="https://img.youtube.com/vi/MJTbHB9aRbU/maxresdefault.jpg" width="350" alt="Video 1">
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://youtu.be/rEaToVuLTwQ">
+        <img src="https://img.youtube.com/vi/rEaToVuLTwQ/maxresdefault.jpg" width="350" alt="Video 2">
+      </a>
+    </td>
+  </tr>
+</table>
 
 
 
