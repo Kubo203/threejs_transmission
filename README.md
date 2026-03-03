@@ -1,6 +1,7 @@
 # 3D Reprezentácia Prevodovky 
 
 ## O Projekte
+<h2 align="center">Demo video</h2>
 <p align="center">
   <a href="https://youtu.be/MJTbHB9aRbU">
     <img src="https://img.youtube.com/vi/MJTbHB9aRbU/maxresdefault.jpg" width="600" alt="YouTube video">
