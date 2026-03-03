@@ -1,6 +1,10 @@
 # 3D Reprezentácia Prevodovky 
 
-## O Projekte
+## O 
+
+https://github.com/user-attachments/assets/7bb04ed6-23b7-4e34-8436-d8c8f1d51ef7
+
+Projekte
 
 Tento program predstavuje **3D reprezentáciu prevodovky automobilu** vytvorenú v rámci tematického okruhu *Simulátor dynamického pohybu v 3D priestore* vrámci predmetu **Počítačová grafika**.
 
